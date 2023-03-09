@@ -1,9 +1,9 @@
-const moment = require("moment")
+const moment = require("moment");
 
+const todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
-
-$(document).ready(function() {
+$(document).get(function() {
     $("#currentDay").text(moment().format("dddd, MMMM Do"))
 
     $(".time-block").each(function() {
@@ -61,7 +61,5 @@ function loadSavedData() {
       }
     }
   }
-
-  
   
   loadSavedData();
