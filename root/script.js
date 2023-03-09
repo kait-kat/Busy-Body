@@ -1,5 +1,8 @@
 const moment = require("moment")
 
+$("#currentDay").html(todayDate);
+
+
 $(document).ready(function() {
     $("#currentDay").text(moment().format("dddd, MMMM Do"))
 
@@ -33,3 +36,32 @@ $(document).ready(function() {
         })
 
 })
+
+const saveButtons = document.querySelectorAll(".saveBtn");
+for (let i = 0; i < saveButtons.length; i++) {
+  saveButtons[i].addEventListener("click", function(e) {
+    const text = e.target.closest(".row").querySelector(".description").value;
+    const hour = e.target.closest(".row").querySelector(".hour").textContent.trim();
+    localStorage.setItem(hour, text);
+  });
+}
+
+function loadSavedData() {
+    const descriptionElements = document.querySelectorAll(".description");
+    const hourElements = document.querySelectorAll(".hour");
+    for (let i = 0; i < descriptionElements.length; i++) {
+      const hour = hourElements[i].textContent.trim();
+          console.log(hour);
+      const eventTime = moment().format("YYYY-MM-DD") + "-" + hour;
+          console.log(eventTime);
+      const savedText = localStorage.getItem(eventTime);
+          console.log(savedText);
+      if (savedText !== null) {
+        descriptionElements[i].value = savedText;
+      }
+    }
+  }
+
+  
+  
+  loadSavedData();

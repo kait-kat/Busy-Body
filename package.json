@@ -1,0 +1,9 @@
+{
+    "description": "A calendar app designed to keep you organized",
+    "authors": "kait-kat",
+    "version": "1.0.0",
+    "main": "index.html",
+    "dependencies": {
+        "moment": "^2.29.4"
+    }
+}
