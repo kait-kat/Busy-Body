@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Busy Body</title>
   </head>
 
   <body>
@@ -29,9 +29,21 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="time-block">
+                    <div class="row">
+                        <div class="col-md-2 hour">6 AM</div>
+                        <textarea class="col-md-8 desciption"></textarea>
+                        <button class="col-md-2 saveBtn">Save</button>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
