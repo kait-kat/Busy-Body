@@ -1,9 +1,6 @@
 const todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
-$(document).get(function() {
-    $("#currentDay").text(moment().format("dddd, MMMM Do"))
-
     $(".time-block").each(function() {
         const currentHour = moment().hours()
         const blockHour = parseInt($(this).attr("id"))
@@ -32,8 +29,6 @@ $(document).get(function() {
 
             $(this).children(".row").children(".description").val(eventText)
         })
-
-})
 
 const saveButtons = document.querySelectorAll(".saveBtn");
 for (let i = 0; i < saveButtons.length; i++) {
