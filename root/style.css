@@ -15,7 +15,7 @@ body {
   
   .jumbotron {
     text-align: center;
-    background-color: transparent;
+    background-color: pink;
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
@@ -23,6 +23,7 @@ body {
   
   .description {
     white-space: pre-wrap;
+    background-color: plum;
   }
   
   .time-block {
@@ -37,7 +38,7 @@ body {
   }
   
   .hour {
-    background-color: #ffffff;
+    background-color: lavender;
     color: #000000;
     border-top: 1px dashed #000000;
   }
@@ -61,7 +62,7 @@ body {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06aed5;
+    background-color: palevioletred;
     color: white;
   }
   
