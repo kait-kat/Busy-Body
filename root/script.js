@@ -1,9 +1,7 @@
-import moment from 'moment';
-
 const todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
-    $(".time-block").each(function() {
+  $(".time-block").each(function() {
         const currentHour = moment().hours()
         const blockHour = parseInt($(this).attr("id"))
 
