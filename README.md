@@ -22,7 +22,7 @@ No extra installation needed, everything functions completely in the browser and
 
 ## Usage
 
-Once you launch the link it should take you immediately to your day! <a href="url">https://kait-kat.github.io/Busy-Body/root/index.html</a>
+Once you launch the link it should take you immediately to your day! <href link="url">https://kait-kat.github.io/Busy-Body/root/index.html</href>
 
 ## Further Development
 
