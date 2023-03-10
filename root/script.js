@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 const todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
